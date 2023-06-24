@@ -1,0 +1,26 @@
+﻿<Window x:Class="UserCrud.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserCrud"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="CRUD Opration in C#" HorizontalAlignment="Center" Margin="0,14,0,0" VerticalAlignment="Top" Width="121"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="39,72,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.272,0.341"/>
+        <TextBox x:Name="name_txt"  HorizontalAlignment="Left" Margin="83,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="39,109,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.272,0.341"/>
+        <TextBox x:Name="email_txt" HorizontalAlignment="Left" Margin="83,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="19,153,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.272,0.341"/>
+        <TextBox x:Name="password_txt" HorizontalAlignment="Left" Margin="84,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"/>
+        <DataGrid Margin="307,64,41,165" x:Name="datagrid"/>
+        <Button x:Name="SaveBtn" Content="Save" HorizontalAlignment="Left" Height="41" Margin="25,363,0,0" VerticalAlignment="Top" Width="166" Click="SaveBtn_Click"/>
+        <Button x:Name="UpdateBtn" Content="Update" HorizontalAlignment="Left" Height="41" Margin="227,361,0,0" VerticalAlignment="Top" Width="166" Click="UpdateBtn_Click"/>
+        <Button x:Name="DeleteBtn" Content="Delete" HorizontalAlignment="Left" Height="41" Margin="429,361,0,0" VerticalAlignment="Top" Width="166" Click="DeleteBtn_Click"/>
+        <Button x:Name="ClearBtn" Content="Clear User Input" HorizontalAlignment="Left" Height="41" Margin="616,361,0,0" VerticalAlignment="Top" Width="166" Click="ClearBtn_Click"/>
+        <Label Content="Select ID" HorizontalAlignment="Left" Margin="260,298,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.272,0.341"/>
+        <TextBox x:Name="search_txt" HorizontalAlignment="Left" Margin="325,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"/>
+
+    </Grid>
+</Window>
